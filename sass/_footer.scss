@@ -1,0 +1,18 @@
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-family: $fontMain;
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    &__logo {
+        max-width: 100px;
+    }
+    &__txt {
+        margin: auto;
+        //font-size: 14px;
+        @include fontSize(14px);
+    }
+}
