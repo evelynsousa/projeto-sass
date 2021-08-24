@@ -18,6 +18,12 @@
         margin-right: 0;
     }
 
+    p {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 5px 0;
+    }
+
     .breadcrumb {
         @include flx(justify-content, center);
         align-items: center;
@@ -37,8 +43,10 @@
         }
     }
     &__img {
-        margin-bottom: 20px;
+        margin: 20px auto;
         width: 100%;
+        display:flex;
+        max-width: 60%;
     }
 
     &__details {
