@@ -42,7 +42,7 @@ $img-width: 45%;
     @return $size / 16px * 1rem;
 }
 
-@import 'header', 'footer', 'article', 'about' ;
+@import 'header', 'footer', 'article', 'about', 'collection' ;
 
 .main {
     display: flex;
