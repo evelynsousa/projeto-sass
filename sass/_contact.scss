@@ -1,0 +1,41 @@
+.main {
+    &__contact {
+        display: flex;
+        align-items: center;
+        @include for-phone-only {
+            flex-direction: column;
+        }
+
+        &__img {
+            width: 50%;
+            @include for-phone-only {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        &__info {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            text-align: center;
+            @include for-phone-only {
+                width: 100%;
+                padding-top: 15px;
+            }
+            p {
+                font-size: 24px;
+                line-height: 30px;
+                padding: 10px 0;
+                color: $purple;
+                font-weight: bold;
+                @include for-phone-only {
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding: 0 45px;
+                }
+            }
+        }
+    }
+}
